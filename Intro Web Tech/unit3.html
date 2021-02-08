@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Images Gallery</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <header>
+      <h1>Dynamic Picture Gallery</h1>
+      <p> Resize the browser window size to change the pictures</p>
+      <hr>
+    </header>
+
+    <main>
+      <h3>Apple Products</h3>
+      <picture>
+        <source media="(min-width:769px)" srcset="images/apple4.jpg">
+        <source media="(min-width:426px)" srcset="images/apple3.webp">
+        <source media="(min-width:321px)" srcset="images/apple2.jpeg">
+        <img src="images/apple1.jpg" alt="Small iPod" style="width:200px;height:200px;">
+      </picture>
+      <hr>
+
+      <h3>Human Development</h3>
+      <picture>
+        <source media="(min-width:769px)" srcset="images/baby4.png">
+        <source media="(min-width:426px)" srcset="images/baby3.jpg">
+        <source media="(min-width:321px)" srcset="images/baby2.png">
+        <img src="images/baby1.jfif" alt="Baby" style="width:200px;height:200px;">
+      </picture>
+      <hr>
+
+      <h3>Tree Growth</h3>
+      <picture>
+        <source media="(min-width:769px)" srcset="images/tree4.jpg">
+        <source media="(min-width:426px)" srcset="images/tree3.jfif">
+        <source media="(min-width:321px)" srcset="images/tree2.jpg">
+        <img src="images/tree1.jpeg" alt="Little Tree" style="width:200px;height:200px;">
+      </picture>
+      <hr>
+
+    </main>
+
+    <footer>
+      <i>&copy;2021 Andrew Womack</i>
+    </footer>
+
+  </body>
+</html>
