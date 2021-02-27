@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+h1,h2,h3 {
+  text-align: center;
+}
+
+#wrapper {
+  width: 80%;
+  margin: auto; 
+  background-color: rgb(212, 205, 205);
+  box-shadow: 10px 10px 10px
+}
+
+div {
+  width: 90%;
+  margin: auto;
+}
+
+.itembox {
+  color: brown; border-color: black; background-color: rgb(255, 240, 226);
+  border-style: solid;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px black;
+  padding: 5px;
+}
+
+/* Attached to Shirky Principle div */
+.favorite {
+  color: rgb(255, 240, 226); border-color: lightgray; background-color: brown;
+  border-style: dotted;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px black;
+  padding: 5px;
+}
+
+/* This is for the lists in the <main> not to be confused with the nav bar */
+ol {
+  background-color: brown;
+  color: rgb(255, 240, 226);
+  list-style-type: upper-roman;
+}
+
+ul {
+  background-color: brown;
+  color: rgb(255, 240, 226);
+  list-style-type: square;
+}
+
+/* Below this is the navbar stuff */
+.navbar {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 25px;
+  width: 90%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+li a:hover {
+  background-color: #111;
+}
