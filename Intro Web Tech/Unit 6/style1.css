@@ -1,0 +1,32 @@
+body {
+  background-image: url(https://www.theamplituhedron.com/projects/How-to-make-a-scroll-menu-with-random-star-background-in-HTML/Pictures/1.JPG);
+}
+
+main {
+  background-color:slategray;
+  color:white;
+}
+
+ul li {
+  list-style-image: url(https://img.informer.com/icons/png/32/158/158983.png);
+}
+
+#wrapper {
+ width:60%;
+ margin: auto;
+ margin-top: 30px;
+}
+
+#borderimg {
+  border: 20px solid transparent;
+  padding: 15px;
+  border-image: url(borderimage.png) 20 stretch;
+}
+
+.mainimg {
+  height: 300px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
