@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="style.css">
+  </link>
     <style>
 
         #pyramid {
@@ -14,31 +16,40 @@
        }
     </style>
 </head>
+
 <body >
-    <h1>Mario 3</h1>
+    <h1 id="bigTitle">Pyramid Slide</h1>
 
     <br>
 
-    <p>When you say</p>
-
-    <p><strong>Draw a pyramid</strong></p>
-
-    <p>I say:</p>
+    <div id="pyramidBlock">
+    <div id="selectors">
 
     <br>
+
+    <label>Brick Symbol:</label>
+    <select id="dropdownBox" onchange="logClickAndHandler()">
+      <option>#</option>
+      <option>@</option>
+      <option>X</option>
+      <option>$</option>
+    </select>
 
     <label>How high?</label>
+    <input type="range" oninput="logClickAndHandler()" id="height" min="0" max="20">
+    <label id="heightNum"></label>
 
-    <input type="text" id="height"/>
+    </div>
 
     <br><br>
 
-    <button onclick="logClickAndHandler()">Draw a pyramid</button>
+    <!--<button onclick="logClickAndHandler()">Draw a pyramid</button>-->
 
     <br><br>
 
     <div id="pyramid"></div>
-
+    <br>
+    </div>
     <script src="mario.js"></script>
 </body>
 </html>

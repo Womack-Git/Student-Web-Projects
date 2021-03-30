@@ -9,10 +9,10 @@ let clearContent = function(){
 function printPyramid(rows, height){
   let str = '';
   for(let spaces = height - rows; spaces>=1; spaces--){
-    str += "."
+    str += ".";
   }
   for (let num = rows;num>=0;num--){
-    str += "#"
+    str += document.getElementById("dropdownBox").value;
   }  
 
   let para = document.createElement("p");
@@ -26,6 +26,7 @@ function printPyramid(rows, height){
 
 //Project 3 new stuff
 function logClickAndHandler(){
+  document.getElementById("heightNum").innerText = document.getElementById("height").value;
   clearContent("pyramid");  //content reset function call
   let height = document.getElementById("height").value;
   determineHeightAndThenDrawPyramid(height);
@@ -37,4 +38,3 @@ function determineHeightAndThenDrawPyramid(height){
   console.log(printPyramid(i, height))
   } 
 }
-
