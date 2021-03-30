@@ -9,7 +9,8 @@ let clearContent = function(){
 function printPyramid(rows, height){
   let str = '';
   for(let spaces = height - rows; spaces>=1; spaces--){
-    str += ".";
+    str += "\xa0";
+
   }
   for (let num = rows;num>=0;num--){
     str += document.getElementById("dropdownBox").value;
