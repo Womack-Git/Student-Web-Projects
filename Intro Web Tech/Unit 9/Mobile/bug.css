@@ -1,0 +1,111 @@
+header, nav, main, footer { display: block; } 
+* {box-sizing: border-box; }
+body { background-color: #330000;
+       font-family: Verdana, Arial, sans-serif;
+}
+#wrapper { width: 960px;
+           margin: auto;
+		   background-color: #F4E8BC;
+		   color: #330000;
+		   box-shadow: 5px 5px 5px #000000;
+}
+h1 { background-image: url(images/Evil_Bug.png);
+       background-size: contain;
+     background-repeat: no-repeat;
+     background-color: #F4E8BC;
+	 height: 110px;
+	 font-family: Georgia, "Times New Roman", serif;
+	 font-size: 4.5em;
+     padding-left: 220px;
+	 padding-top: 20px;
+	 text-shadow: 3px 3px 3px #90745D;
+	 margin-bottom: 0;
+}
+nav { padding-top: 10px;
+      float: left;
+      width: 200px; 
+}
+nav ul { list-style-type: none; 
+       padding-left: 0;
+	 }
+nav li { padding-bottom: 5px;
+padding-left: 5px;
+       font-weight: bold;
+}
+nav li:hover { 
+       background: #90745D;
+}
+
+nav a { text-decoration: none; }
+nav a:link { color: #330000; }
+nav a:visited{ color: #90745D; }
+nav a:hover {        color:#FFFFCC;;
+               }
+
+
+main { background-color: #FFFFCC;
+          margin-left: 200px;
+          padding: 1px 20px 20px 20px;   
+		  min-height: 300px;
+}
+main img { float: right;
+              padding: 20px;
+}
+
+footer { background-color: #FFFFCC;
+       margin-left: 200px;
+       padding: 20px;
+       text-align: center;
+	   font-size: small;
+	   font-style: italic;
+}
+
+.clear{
+  clear: both;
+}
+
+/*Add your mobile CSS rules below*/
+@media (max-width: 720px) { 
+  #wrapper {
+    width: auto;
+  }
+  header {
+    float: none;
+  }
+  nav {
+    float: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    width: auto;
+    font-size:25px;
+  }
+  nav li {
+    border-top:2px solid #330000;
+    border-bottom:2px solid #330000;
+  }
+  main { 
+    margin-left: 0px;
+    padding: 10px;   
+    font-size:1.5em;
+  }
+  main img {
+    width:100%
+  }
+  p {
+    text-align: center;
+  }
+  h4, h3, h2 {
+    text-align: center;
+  }
+  h1 {
+    background-image: none;
+    text-align: center;
+    height :auto;
+    padding-left: 0;
+  }
+  footer{
+    text-align:center;
+    margin-left:0;
+  }
+}
