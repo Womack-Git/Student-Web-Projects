@@ -1,0 +1,29 @@
+table, th, td{
+  border: 1px solid black;
+  border-collapse:collapse;
+  padding: 5px;
+}
+
+.table1{
+  background-color:beige;
+
+}
+
+.table3{
+  text-align:center;
+}
+
+#recipe{
+  text-align:left;
+}
+
+img{
+  height:80px;
+  width:120px;
+}
+#egg{
+  padding-left:65px;
+  padding-bottom:10px;
+  height:200px;
+  width:250px;
+}
